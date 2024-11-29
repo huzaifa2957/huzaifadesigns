@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+  color: #333;
+}
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #0074d9;
+  color: white;
+}
+.header .logo {
+  font-size: 1.5em;
+}
+.header .search-bar {
+  display: flex;
+  align-items: center;
+}
+.header .search-bar input {
+  padding: 5px;
+  font-size: 1em;
+}
+.header .btn-trend {
+  background-color: white;
+  border: none;
+  color: #0074d9;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.header .icons button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+.breadcrumb {
+  margin: 10px 0;
+  color: #555;
+}
+.notifications-section h2 {
+  color: #333;
+}
+.notifications-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notifications-header .badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+.notifications-list {
+  margin: 20px 0;
+}
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.notification-item .icon {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+.notification-item.low {
+  border-left: 5px solid green;
+}
+.notification-item.high {
+  border-left: 5px solid red;
+}
+.notification-item.medium {
+  border-left: 5px solid orange;
+}
+.notification-item .details {
+  flex: 1;
+}
+.notification-item .priority {
+  font-size: 0.8em;
+  color: gray;
+}
+.filter-container {
+  position: relative;
+}
+.filter-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: none;
+}
+.filter-popup button {
+  display: block;
+  background: none;
+  border: none;
+  padding: 5px;
+  text-align: left;
+  width: 100%;
+}
+.filter-popup button:hover {
+  background-color: #f0f0f0;
+}
+.hidden {
+  display: none;
+}

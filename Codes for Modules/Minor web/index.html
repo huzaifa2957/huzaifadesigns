@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <header class="header">
+      <h1 class="logo">ComplyWise</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+        <button>🔍</button>
+      </div>
+      <button class="btn-trend">View Compliance Trend</button>
+      <div class="icons">
+        <button>🔄</button>
+        <button>🔔</button>
+        <button>⚙️</button>
+      </div>
+    </header>
+    <nav class="breadcrumb">
+      <span>Home</span> &gt; <span>Document Submission</span>
+    </nav>
+    <section class="notifications-section">
+      <h2>Notifications / Alerts</h2>
+      <div class="notifications-header">
+        <span>🔔 Notifications <span class="badge">3</span></span>
+        <p>Stay updated with regular alerts</p>
+      </div>
+      <div class="notifications-list">
+        <div class="notification-item low">
+          <div class="icon">📄</div>
+          <div class="details">
+            <h3>Document uploaded successfully</h3>
+            <p>The uploaded document has been successfully saved</p>
+            <span class="priority">Low</span>
+          </div>
+          <span class="time">1 day</span>
+        </div>
+        <div class="notification-item high">
+          <div class="icon">📄</div>
+          <div class="details">
+            <h3>Quarterly Reports available</h3>
+            <p>The Q4 2023 report is ready for review</p>
+            <span class="priority">High</span>
+          </div>
+          <span class="time">1 day</span>
+        </div>
+        <div class="notification-item medium">
+          <div class="icon">🔄</div>
+          <div class="details">
+            <h3>Regulatory Standard alert</h3>
+            <p>A new regulatory standard has been published that may affect operations</p>
+            <span class="priority">Medium</span>
+          </div>
+          <span class="time">4 days</span>
+        </div>
+      </div>
+      <button class="btn-mark-read">Mark all as read</button>
+      <div class="filter-container">
+        <button class="btn-filter">🔽 Showing 3 notifications</button>
+        <div class="filter-popup hidden">
+          <button class="filter-option">High priority alerts</button>
+          <button class="filter-option">Medium priority alerts</button>
+          <button class="filter-option">Low priority alerts</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

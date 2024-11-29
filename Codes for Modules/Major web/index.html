@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComplyWise - Document Submission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">ComplyHub</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button><img src="search-icon.png" alt="Search"></button>
+        </div>
+        <div class="header-icons">
+            <button><img src="trend-icon.png" alt="Trend"></button>
+            <button><img src="refresh-icon.png" alt="Refresh"></button>
+            <button><img src="notification-icon.png" alt="Notifications"></button>
+            <button><img src="settings-icon.png" alt="Settings"></button>
+        </div>
+    </div>
+    <div class="nav-tabs">
+        <button class="tab-button active" onclick="showPage('upload')">Upload</button>
+        <button class="tab-button" onclick="showPage('processing-queue')">Processing Queue</button>
+        <button class="tab-button" onclick="showPage('revision-history')">Revision History</button>
+        <button class="tab-button" onclick="showPage('storage')">Storage</button>
+    </div>
+    <div class="content">
+        <div id="upload" class="page active">
+            <h1>Document Submission</h1>
+            <h2>Document Upload</h2>
+            <p>Upload multiple or single document for processing</p>
+            <label for="file-upload">Document(s)</label>
+            <input type="file" id="file-upload" multiple>
+            <button class="upload-button">Upload Documents</button>
+        </div>
+        <div id="processing-queue" class="page">
+            <h1>Document Submission</h1>
+            <h2>Processing Queue</h2>
+            <p>View and manage documents in the processing queue</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Document Name</th>
+                        <th>Status</th>
+                        <th>Date Submitted</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Document1.pdf</td>
+                        <td class="status validated">Validated</td>
+                        <td>2023-05-14</td>
+                        <td><button>Reprocess</button></td>
+                    </tr>
+                    <tr>
+                        <td>Document2.docx</td>
+                        <td class="status failed">Failed</td>
+                        <td>2024-08-18</td>
+                        <td><button>Reprocess</button></td>
+                    </tr>
+                    <tr>
+                        <td>Document3.xlsx</td>
+                        <td class="status processing">Processing</td>
+                        <td>2024-09-22</td>
+                        <td><button>Reprocess</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="revision-history" class="page">
+            <h1>Document Submission</h1>
+            <h2>Revision History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Document Name</th>
+                        <th>Date Submitted</th>
+                        <th>Reviewed By</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.0</td>
+                        <td>Document1.pdf</td>
+                        <td>2023-05-01</td>
+                        <td>Admin</td>
+                    </tr>
+                    <tr>
+                        <td>1.1</td>
+                        <td>Document2.docx</td>
+                        <td>2023-06-15</td>
+                        <td>John Doe</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="storage" class="page">
+            <h1>Document Submission</h1>
+            <h2>Storage</h2>
+            <p>Total Storage Used: 75%</p>
+            <ul>
+                <li>PDF: 40%</li>
+                <li>DOCX: 20%</li>
+                <li>XLSX: 15%</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
